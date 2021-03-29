@@ -46,7 +46,7 @@ function App() {
       </div>
       <div>
         {data
-          .filter((flower) => flower.name.toLowerCase().includes(searchByName))
+          .filter((flower) => flower.name.toLowerCase().includes(searchByName.toLowerCase()))
           .filter((flower) => flower.sunneed.includes(searchBySunneed))
           .map((flower, index) => (
             <Flower key={index} flower={flower} />
