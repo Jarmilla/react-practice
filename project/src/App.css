@@ -19,14 +19,35 @@ body {
 
 .Flower {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 2rem;
-  border: indianred 2px solid;
+  border: indianred 3px solid;
   border-radius: 15px;
-  margin: 2rem;
+  margin: 2rem 0;
+  pad: 2rem;
 }
 
+.Flower .picture,
+.Flower .informations {
+  width: 50%;
+  padding: 1rem;
+}
 .Flower img {
-  width: 80%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .Flower {
+    flex-direction: column;
+  }
+  .Flower .picture,
+  .Flower .informations {
+    width: 90%;
+    padding: 1rem;
+  }
 }
