@@ -2,7 +2,7 @@ import React from "react";
 
 function Flower({ flower }) {
   return (
-    <div>
+    <div className="Flower">
       <div className="informations">
         <h1>{flower.name}</h1>
         <p>Szín: {flower.color}</p>

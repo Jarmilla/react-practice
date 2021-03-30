@@ -3,7 +3,9 @@ import React from "react";
 function DropDownSunlight({ setSearchBySunneed }) {
   return (
     <select name="fényigény" id="fényigény">
-      <option onClick={(e) => setSearchBySunneed(e.target.value)} value=""></option>
+      <option onClick={(e) => setSearchBySunneed(e.target.value)} value="">
+        Keresés Fényigény szerint
+      </option>
       <option
         onClick={(e) => {
           setSearchBySunneed(e.target.value);

@@ -1,3 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: cornsilk;
+}
+
 .App {
+  margin: 5% 10%;
   text-align: center;
+}
+.search {
+  background-color: indianred;
+  border-radius: 15px;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Flower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border: indianred 2px solid;
+  border-radius: 15px;
+  margin: 2rem;
+}
+
+.Flower img {
+  width: 80%;
 }

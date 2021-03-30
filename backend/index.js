@@ -45,7 +45,7 @@ let flowers = [
     color: "fehér, rózsaszín, magenta",
     price: 249,
     type: "cserepes",
-    available: true,
+    available: false,
     picture: "https://cdn.shopify.com/s/files/1/0064/0388/3093/products/ImageServer_d5c6daa4-3b70-41b7-8c96-24ff34adf7f8_570x570_crop_center.jpg?v=1616155659",
     sunneed: "fénykedvelő",
   },
@@ -73,7 +73,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("Hello! Here, a flower for you :)");
+  res.send("Hello! Here, a flower for you <3 :)");
 });
 
 app.get("/flowers", (req, res) => {

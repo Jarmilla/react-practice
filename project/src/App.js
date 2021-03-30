@@ -24,15 +24,15 @@ function App() {
     <div className="App">
       <div className="search">
         <input type="text" placeholder="Keresés név szerint" onChange={(e) => setSearchByName(e.target.value)} />
-        <label for="fényigény">Fényigény:</label>
         <DropDownSunlight setSearchBySunneed={setSearchBySunneed} />
       </div>
       <div>
-        {data &&
-          data.flowers
-            .filter((flower) => flower.name.toLowerCase().includes(searchByName.toLowerCase()))
-            .filter((flower) => flower.sunneed.includes(searchBySunneed))
-            .map((flower, index) => <Flower key={index} flower={flower} />)}
+        {data
+          ? data.flowers
+              .filter((flower) => flower.name.toLowerCase().includes(searchByName.toLowerCase()))
+              .filter((flower) => flower.sunneed.includes(searchBySunneed))
+              .map((flower, index) => <Flower key={index} flower={flower} />)
+          : "Betöltés folyamatban..."}
       </div>
     </div>
   );
