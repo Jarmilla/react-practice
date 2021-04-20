@@ -6,6 +6,7 @@ import DropDownSunlight from "./components/DropDownSunlight";
 function App() {
   const port = 3030;
 
+  //start backend to be able to fetch datas
   useEffect(() => {
     fetch(`http://localhost:${port}/flowers`)
       .then((res) => res.json())
