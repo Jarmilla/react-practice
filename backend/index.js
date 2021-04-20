@@ -3,6 +3,7 @@ const cors = require("cors");
 const app = express();
 const port = 3030;
 
+//data
 let flowers = [
   {
     name: "Tulipán",
@@ -46,7 +47,7 @@ let flowers = [
     price: 249,
     type: "cserepes",
     available: false,
-    picture: "https://cdn.shopify.com/s/files/1/0064/0388/3093/products/ImageServer_d5c6daa4-3b70-41b7-8c96-24ff34adf7f8_570x570_crop_center.jpg?v=1616155659",
+    picture: "https://viragbarat.hu/wp-content/uploads/Phalaenopsis-orchidea.jpg",
     sunneed: "fénykedvelő",
   },
   {

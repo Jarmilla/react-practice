@@ -10,6 +10,7 @@ function Flower({ flower }) {
         <p>Típus: {flower.type}</p>
         <p>Raktáron: {flower.available ? "Igen" : "Elfogyott"}</p>
       </div>
+      {/* conditional rendering: */}
       <div className="picture">{flower.picture.length > 0 ? <img src={flower.picture} alt={flower.name} /> : ""}</div>
     </div>
   );
